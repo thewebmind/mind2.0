@@ -1,3 +1,0 @@
-<?wml version="1.0"?>
-student <-   ||"||EXTENDS||"||  {1  ,*} teacher
-teacher <-   {0  ,*} student

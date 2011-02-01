@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root><name value="xyz"/><date value="11/26/2010 - 19:57:24"/><owner value="admin"/><processed value="true"/><version value="0"/><subVersion value="0"/><update value="1"/><lang value="en-US"/><dbms value="PostgreSQL"/><users><user login="admin"/><user login=""/></users><environment><development dbAddress="localhost" dbName="" dbPort="" rootUser="root" rootUserPwd="" user="" userPwd=""/><production dbAddress="" dbName="" dbPort="" rootUser="" rootUserPwd="" user="" userPwd=""/></environment></root>
