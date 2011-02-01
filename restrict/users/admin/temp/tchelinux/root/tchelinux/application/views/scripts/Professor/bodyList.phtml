@@ -1,0 +1,51 @@
+<h2 id='warning'><?php echo $this->message?></h2>
+<div id='list'>
+	<?php 
+	foreach ($this->professorCollection as $professor)
+	{
+		$professor_alunoCollection = $professor->findDependentRowset('ProfessorAluno');
+$maeCollection = $professor->findDependentRowset('Mae');
+
+		?>
+			<table border='0'>
+				<tr>
+					<td style='text-align: left'>
+							<a href='<?php echo PATH_APPLICATION; ?>/Professor/edit?id=<?php echo ($professor->pk_professor); ?>'>
+								<?php echo ($professor->nome);?>
+							</a><br>
+							<?php 
+								if(sizeof($professor_alunoCollection)>0){
+							?>
+							<i>ProfessorAluno:</i><br>
+								<div style='color:blue;font-size: 12px'>
+								<?php
+								foreach ($professor_alunoCollection as $professor_aluno)
+								{
+									echo $professor_aluno->pk_professor_aluno.'<br>';
+								}
+								?>
+								</div>
+								<?php }?>
+<?php 
+								if(sizeof($maeCollection)>0){
+							?>
+							<i>Mae:</i><br>
+								<div style='color:blue;font-size: 12px'>
+								<?php
+								foreach ($maeCollection as $mae)
+								{
+									echo $mae->pk_mae.'<br>';
+								}
+								?>
+								</div>
+								<?php }?>
+				</td>
+					<td style='vertical-align: top'>
+						<a href='<?php echo PATH_APPLICATION; ?>/Professor/remove?id=<?php echo ($professor->pk_professor); ?>'><button>Delete</button></a>	
+					</td>
+				</tr>
+			</table>
+		<?php		
+	}
+	?>
+</div>

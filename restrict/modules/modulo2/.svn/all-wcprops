@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/335/trunk/restrict/modules/modulo2
+END
+conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/335/trunk/restrict/modules/modulo2/conf.xml
+END
+modulo2.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/335/trunk/restrict/modules/modulo2/modulo2.php
+END
+info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/335/trunk/restrict/modules/modulo2/info.xml
+END

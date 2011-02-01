@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5
+END
+adodb-php4.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-php4.inc.php
+END
+adodb-datadict.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-datadict.inc.php
+END
+toexport.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/toexport.inc.php
+END
+adodb-active-recordx.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-active-recordx.inc.php
+END
+adodb-exceptions.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-exceptions.inc.php
+END
+adodb-xmlschema.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-xmlschema.inc.php
+END
+adodb-csvlib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-csvlib.inc.php
+END
+rsfilter.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/rsfilter.inc.php
+END
+adodb-xmlschema03.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-xmlschema03.inc.php
+END
+xmlschema.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/xmlschema.dtd
+END
+adodb-pear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-pear.inc.php
+END
+adodb-active-record.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-active-record.inc.php
+END
+server.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/server.php
+END
+adodb-errorhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-errorhandler.inc.php
+END
+xmlschema03.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/xmlschema03.dtd
+END
+adodb-error.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-error.inc.php
+END
+adodb-iterator.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-iterator.inc.php
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/license.txt
+END
+adodb-perf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-perf.inc.php
+END
+adodb-time.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-time.inc.php
+END
+adodb-pager.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-pager.inc.php
+END
+tohtml.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/tohtml.inc.php
+END
+adodb-errorpear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-errorpear.inc.php
+END
+adodb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb.inc.php
+END
+pivottable.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/pivottable.inc.php
+END
+adodb-lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-lib.inc.php
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/readme.txt
+END
+adodb-memcache.lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/adodb-memcache.lib.inc.php
+END

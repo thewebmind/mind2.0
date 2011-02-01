@@ -1,0 +1,151 @@
+[php]
+
+/**
+ * 
+ * Controladora de <?php echo $this->name ?> 
+ * Mind Module for Zend Framework Applications (Mimoza)
+ * @author     <?php echo $this->author ?> 
+ * @see        http://code.google.com/p/webmind/Mimoza
+ * @package    Application
+ * @subpackage Controller
+ */
+class <?php echo $this->name ?>Controller extends Zend_Controller_Action
+{
+    /**
+     * 
+     * @var Application_Model_DbTable_<?php echo $this->name ?> 
+     */
+    protected $_table = null;
+
+    /**
+     * 
+     * @var Application_Form_<?php echo $this->name ?> 
+     */
+    protected $_form = null;
+
+    /**
+     * 
+     * @return Application_Model_DbTable_<?php echo $this->name ?> 
+     */
+    public function getTable()
+    {
+        if (is_null($this->_table)) {
+            $this->_table = new Application_Model_DbTable_<?php echo $this->name ?>();
+        }
+        return $this->_table;
+    }
+
+    /**
+     * 
+     * @return Application_Form_<?php echo $this->name ?> 
+     */
+    public function getForm()
+    {
+        if (is_null($this->_form)) {
+            $this->_form = new Application_Form_<?php echo $this->name ?>();
+        }
+        return $this->_form;
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    public function init()
+    {
+        $this->view->headTitle('<?php echo $this->name ?>');
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    public function indexAction()
+    {
+        $table  = $this->getTable();
+        $order  = $this->_getParam('order', null);
+        $select = $table->select()->order($order);
+        $result = $table->fetchAll($select);
+
+        $this->view->result = $result;
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    public function createAction()
+    {
+        $form = $this->getForm();
+        if ($this->getRequest()->isPost()) {
+            $data = $this->getRequest()->getPost();
+            if ($form->isValid($data)) {
+                $data = $form->getValues();
+                $table = $this->getTable();
+                $element = $table->createRow($data);
+                $element->save();
+                $this->_helper->redirector('index');
+            }
+        }
+        $this->view->form = $form;
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    public function updateAction()
+    {
+        $table = $this->getTable();
+        $primaries = array();
+<?php foreach ($this->primaries as $primary) : ?>
+        $primaries['<?php echo $primary ?>'] = $this->_getParam('<?php echo $primary ?>');
+<?php endforeach ?>
+        $element = $table->find($primaries)->current();
+        if ($element === null) {
+            throw new Zend_Db_Exception('Invalid Element');
+        }
+        $form = $this->getForm();
+        if ($this->getRequest()->isPost()) {
+            $data = $this->getRequest()->getPost();
+            if ($form->isValid($data)) {
+                $data = $form->getValues();
+                $element->setFromArray($data);
+                $element->save();
+                $this->_helper->redirector('index');
+            }
+        } else {
+            $form->populate($element->toArray);
+        }
+        $this->view->form = $form;
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    public function deleteAction()
+    {
+        $table = $this->getTable();
+        $primaries = array();
+<?php foreach ($this->primaries as $primary) : ?>
+        $primaries['<?php echo $primary ?>'] = $this->_getParam('<?php echo $primary ?>');
+<?php endforeach ?>
+        $element = $table->find($primaries)->current();
+        $element = $table->find($id)->current();
+        if ($element === null) {
+            throw new Zend_Db_Exception('Invalid Element');
+        }
+        $form = $this->getForm();
+        if ($this->getRequest()->isPost()) {
+            $element->delete();
+            $this->_helper->redirector('index');
+        }
+        foreach ($form as $element) {
+            $element->setAttrib('disabled','disabled');
+        }
+        $form->getElement('submit')->setAttrib('disabled', null)
+            ->setLabel('Deletar');
+        $this->view->form = $form;
+    }
+}

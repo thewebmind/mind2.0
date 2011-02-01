@@ -1,0 +1,37 @@
+<h2 id='warning'><?php echo $this->message?></h2>
+<div id='list'>
+	<?php 
+	foreach ($this->alunoCollection as $aluno)
+	{
+		$professor_alunoCollection = $aluno->findDependentRowset('ProfessorAluno');
+
+		?>
+			<table border='0'>
+				<tr>
+					<td style='text-align: left'>
+							<a href='<?php echo PATH_APPLICATION; ?>/Aluno/edit?id=<?php echo ($aluno->pk_aluno); ?>'>
+								<?php echo ($aluno->pk_aluno);?>
+							</a><br>
+							<?php 
+								if(sizeof($professor_alunoCollection)>0){
+							?>
+							<i>ProfessorAluno:</i><br>
+								<div style='color:blue;font-size: 12px'>
+								<?php
+								foreach ($professor_alunoCollection as $professor_aluno)
+								{
+									echo $professor_aluno->pk_professor_aluno.'<br>';
+								}
+								?>
+								</div>
+								<?php }?>
+				</td>
+					<td style='vertical-align: top'>
+						<a href='<?php echo PATH_APPLICATION; ?>/Aluno/remove?id=<?php echo ($aluno->pk_aluno); ?>'><button>Delete</button></a>	
+					</td>
+				</tr>
+			</table>
+		<?php		
+	}
+	?>
+</div>

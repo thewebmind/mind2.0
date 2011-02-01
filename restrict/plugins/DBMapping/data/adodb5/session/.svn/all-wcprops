@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session
+END
+adodb-session-clob2.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-session-clob2.php
+END
+adodb-sessions.oracle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-sessions.oracle.sql
+END
+adodb-sessions.mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-sessions.mysql.sql
+END
+adodb-session.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-session.php
+END
+session_schema2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/session_schema2.xml
+END
+adodb-cryptsession2.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-cryptsession2.php
+END
+adodb-session-clob.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-session-clob.php
+END
+adodb-encrypt-mcrypt.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-encrypt-mcrypt.php
+END
+adodb-sessions.oracle.clob.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-sessions.oracle.clob.sql
+END
+adodb-compress-gzip.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-compress-gzip.php
+END
+crypt.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/crypt.inc.php
+END
+adodb-session2.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-session2.php
+END
+adodb-sess.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-sess.txt
+END
+adodb-cryptsession.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-cryptsession.php
+END
+session_schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/session_schema.xml
+END
+adodb-encrypt-md5.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-encrypt-md5.php
+END
+adodb-encrypt-secret.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-encrypt-secret.php
+END
+adodb-encrypt-sha1.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-encrypt-sha1.php
+END
+adodb-compress-bzip2.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/335/trunk/restrict/plugins/DBMapping/data/adodb5/session/adodb-compress-bzip2.php
+END

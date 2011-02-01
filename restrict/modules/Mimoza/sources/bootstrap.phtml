@@ -1,0 +1,50 @@
+[php]
+
+/**
+ * 
+ * Inicializador do Aplicativo
+ * Mind Module for Zend Framework Applications (Mimoza)
+ * @author     <?php echo $this->author ?> 
+ * @see        http://code.google.com/p/webmind/Mimoza
+ * @package    Application
+ * @subpackage Bootstrap
+ */
+class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
+{
+    /**
+     * 
+     * @return void
+     */
+    protected function _initViewHelpers()
+    {
+        $layout = $this->bootstrap('Layout')->getResource('Layout');
+        $view = $layout->getView();
+        $view->setHelperPath(dirname(APPLICATION_PATH) . 
+            '/library/System/View/Helper/', 'System_View_Helper_');
+        Zend_Dojo::enableView($view);
+        $view->dojo()
+            ->setDjConfigOption('locale', 'pt-br')->setCdnVersion('1.5');
+        $doctype = $view->doctype();
+        $doctype->setDoctype(Zend_View_Helper_Doctype::XHTML1_STRICT);
+        $meta = $view->headMeta();
+        $meta->headMeta('Content-type', 'text/html; charset=utf-8');
+        $title = $view->headTitle();
+        $title->setSeparator(' > ')
+            ->headTitle('<?php echo $this->name ?>');
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    protected function _initRegistries()
+    {
+        Zend_Registry::set('APPLICATION_ENV', APPLICATION_ENV);
+        Zend_Registry::set('APPLICATION_PATH', APPLICATION_PATH);
+
+        Zend_Registry::set('APPLICATION_TEMP', realpath(
+            implode(DIRECTORY_SEPARATOR,
+                array(dirname(__FILE__), '..', 'temp'))));
+    }
+
+}

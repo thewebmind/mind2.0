@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/345/trunk/restrict/framework/classes
+END
+subtype.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/335/trunk/restrict/framework/classes/subtype.php
+END
+fw.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/335/trunk/restrict/framework/classes/fw.php
+END
+relation.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/335/trunk/restrict/framework/classes/relation.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/343/trunk/restrict/framework/classes/user.php
+END
+plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/345/trunk/restrict/framework/classes/plugin.php
+END
+sgbd.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/335/trunk/restrict/framework/classes/sgbd.php
+END
+clipboard.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/335/trunk/restrict/framework/classes/clipboard.css
+END
+attribute.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/335/trunk/restrict/framework/classes/attribute.php
+END
+module.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/335/trunk/restrict/framework/classes/module.php
+END
+mind_processor.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/335/trunk/restrict/framework/classes/mind_processor.php
+END
+project.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/335/trunk/restrict/framework/classes/project.php
+END
+mind.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/335/trunk/restrict/framework/classes/mind.php
+END
+table.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/335/trunk/restrict/framework/classes/table.php
+END

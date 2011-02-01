@@ -1,0 +1,59 @@
+<h2 id='warning'><?php echo $this->message?></h2>
+<center>
+<form action='<?php echo PATH_APPLICATION; ?>/ProfessorAluno/save' method='post'>
+<table>
+	<tr style='display:none'>
+		<td colspan='2'>
+			<input name='pk_professor_aluno' value='<?php echo $this->professor_aluno['pk_professor_aluno'];?>' id='pk_professor_aluno' type='hidden'>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Professor:
+		</td>
+		<td>
+			<select name='pk_professor'>
+				<?php
+					foreach ($this->professorCollection as $professor)
+					{
+						?>
+							<option <?php echo $this->professor_aluno['fk_professor'] == $professor->pk_professor ? 'selected' : ''; ?> value="<?php echo $professor->pk_professor; ?>">
+								<?php echo $professor->nome; ?>
+							</option>
+						<?php
+					}
+			?>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Aluno:
+		</td>
+		<td>
+			<select name='pk_aluno'>
+				<?php
+					foreach ($this->alunoCollection as $aluno)
+					{
+						?>
+							<option <?php echo $this->professor_aluno['fk_aluno'] == $aluno->pk_aluno ? 'selected' : ''; ?> value="<?php echo $aluno->pk_aluno; ?>">
+								<?php echo $aluno->pk_aluno; ?>
+							</option>
+						<?php
+					}
+			?>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type='submit'>
+		</td>
+	</tr>
+</table>
+</form>
+</center>
+	<script type='text/javascript'>
+		$(function() {
+		});
+	</script>

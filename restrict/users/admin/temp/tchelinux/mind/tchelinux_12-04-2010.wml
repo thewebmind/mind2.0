@@ -1,0 +1,6 @@
+<?wml version="1.0"?>
+professor <-   {0  ,*} alunos
+aluno <-   ||"||EXTENDS||"||  {1  ,*} professores
+Professor <-  nome:varchar(60)
+Professor <-   {0  ,*} mãe
+professor <-  salário:real(()

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/366/trunk/restrict/modules/Mimoza/builders
+END
+DbTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/363/trunk/restrict/modules/Mimoza/builders/DbTable.php
+END
+ViewDelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/365/trunk/restrict/modules/Mimoza/builders/ViewDelete.php
+END
+Htaccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/354/trunk/restrict/modules/Mimoza/builders/Htaccess.php
+END
+ViewUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/365/trunk/restrict/modules/Mimoza/builders/ViewUpdate.php
+END
+Bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/356/trunk/restrict/modules/Mimoza/builders/Bootstrap.php
+END
+ViewCreate.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/365/trunk/restrict/modules/Mimoza/builders/ViewCreate.php
+END
+ViewIndex.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/366/trunk/restrict/modules/Mimoza/builders/ViewIndex.php
+END
+Form.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/364/trunk/restrict/modules/Mimoza/builders/Form.php
+END
+Controller.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/366/trunk/restrict/modules/Mimoza/builders/Controller.php
+END
+Configuration.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/355/trunk/restrict/modules/Mimoza/builders/Configuration.php
+END

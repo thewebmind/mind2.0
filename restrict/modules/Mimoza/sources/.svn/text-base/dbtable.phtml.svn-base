@@ -1,0 +1,35 @@
+[php]
+
+/**
+ * Tabela de <?php echo $this->name ?> 
+ * Mind Module for Zend Framework Applications (Mimoza)
+ * @author     <?php echo $this->author ?> 
+ * @see        http://code.google.com/p/webmind/Mimoza
+ * @package    Application
+ * @subpackage Model
+ */
+class Application_Model_DbTable_<?php echo $this->entity ?> extends Zend_Db_Table_Abstract
+{
+    protected $_name = '<?php echo $this->name ?>';
+    protected $_primary = array(
+<?php foreach ($this->primaries as $primary) : ?>
+        '<?php echo $primary ?>',
+<?php endforeach ?>
+    );
+
+    protected $_dependentTables = array(
+<?php foreach ($this->dependencies as $dependency) : ?>
+        'Model_DbTable_<?php echo $dependency ?>',
+<?php endforeach ?>
+    );
+
+    protected $_referenceMap = array(
+<?php foreach ($this->map as $table => $reference) : ?>
+        '<?php echo ucfirst($table) ?>' => array(
+            'refTableClass' => 'Application_Model_DbTable_<?php echo ucfirst($table) ?>',
+            'refColumns'    => array('pk_<?php echo $table ?>'),
+            'columns'       => array('<?php echo $reference ?>'),
+        ),
+<?php endforeach ?>
+    );
+}

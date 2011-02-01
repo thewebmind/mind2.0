@@ -1,0 +1,23 @@
+<h2 id='warning'><?php echo $this->message?></h2>
+<div id='list'>
+	<?php 
+	foreach ($this->professor_alunoCollection as $professor_aluno)
+	{
+		
+		?>
+			<table border='0'>
+				<tr>
+					<td style='text-align: left'>
+							<a href='<?php echo PATH_APPLICATION; ?>/ProfessorAluno/edit?id=<?php echo ($professor_aluno->pk_professor_aluno); ?>'>
+								<?php echo ($professor_aluno->pk_professor_aluno);?>
+							</a><br>
+											</td>
+					<td style='vertical-align: top'>
+						<a href='<?php echo PATH_APPLICATION; ?>/ProfessorAluno/remove?id=<?php echo ($professor_aluno->pk_professor_aluno); ?>'><button>Delete</button></a>	
+					</td>
+				</tr>
+			</table>
+		<?php		
+	}
+	?>
+</div>

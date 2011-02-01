@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/359/trunk/restrict/modules/Mimoza/library
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/342/trunk/restrict/modules/Mimoza/library/Exception.php
+END
+Loader.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/350/trunk/restrict/modules/Mimoza/library/Loader.php
+END
+Builder.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/351/trunk/restrict/modules/Mimoza/library/Builder.php
+END
+Project.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/352/trunk/restrict/modules/Mimoza/library/Project.php
+END

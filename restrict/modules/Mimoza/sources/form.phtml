@@ -1,0 +1,55 @@
+[php]
+
+/**
+ * Formulário de <?php echo $this->name ?> 
+ * Mind Module for Zend Framework Applications (Mimoza)
+ * @author     <?php echo $this->author ?> 
+ * @see        http://code.google.com/p/webmind/Mimoza
+ * @package    Application
+ * @subpackage Form
+ */
+class Application_Form_<?php echo $this->name ?> extends Zend_Dojo_Form
+{
+    public function init()
+    {
+        $elements = array();
+
+<?php foreach ($this->attributes as $attribute) : ?>
+<?php if ($attribute->hidden) : ?>
+        $element = new Zend_Form_Element_Hidden('<?php echo $attribute->name ?>');
+        $element->removeDecorator('Label');
+<?php else : ?>
+<?php switch ($attribute->type) : ?>
+<?php case 'integer' : ?>
+<?php case 'varchar' : ?>
+        $element = new Zend_Dojo_Form_Element_ValidationTextBox('<?php echo $attribute->name ?>');
+<?php if ($attribute->mask != null) : ?>
+        $element->setRegExp('<?php echo $attribute->mask ?>');
+<?php endif ?>
+<?php if ($attribute->size > 0) : ?>
+        $element->setMaxLength('<?php echo $attribute->size ?>');
+<?php endif ?>
+<?php break ?>
+<?php case 'text' : ?>
+        $element = new Zend_Dojo_Form_Element_Textarea('<?php echo $attribute->name ?>');
+<?php break ?>
+<?php case 'date' ?>
+        $element = new Zend_Dojo_Form_Element_DateTextBox('<?php echo $attribute-> name ?>');
+<?php default : ?>
+        $element = new Zend_Dojo_Form_Element_TextBox('<?php echo $attribute->name ?>');
+<?php endswitch ?>
+<?php endif ?>
+        $element->setLabel('<?php echo $attribute->name ?>')
+            ->setRequired(<?php echo $attribute->required ? 'true' : 'false' ?>);
+        $elements[] = $element;
+
+<?php endforeach ?>
+        $element = new Zend_Dojo_Form_Element_SubmitButton('submit-<?php echo $this->name ?>');
+        $element->setLabel('Gravar')->setIgnore(true);
+        $elements[] = $element;
+
+        $this->setName('form-<?php echo $this->name ?>')
+            ->setMethod(self::METHOD_POST)->addElements($elements)
+            ->setAction($this->getView()->url());
+    }
+}

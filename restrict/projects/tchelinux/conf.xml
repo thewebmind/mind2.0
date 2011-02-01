@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root><name value="tchelinux"/><date value="12/04/2010 - 13:47:35"/><owner value="admin"/><processed value="false"/><version value="0"/><subVersion value="0"/><update value="1"/><lang value="pt-BR"/><dbms value="PostgreSQL"/><users><user login="admin"/></users><environment><development dbAddress="localhost" dbName="" dbPort="" rootUser="root" rootUserPwd="" user="" userPwd=""/><production dbAddress="" dbName="" dbPort="" rootUser="" rootUserPwd="" user="" userPwd=""/></environment></root>

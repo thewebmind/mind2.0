@@ -1,0 +1,22 @@
+<?php echo $this->doctype() ?> 
+<html>
+    <head>
+<!-- Head Open  -->
+<?php echo $this->headMeta() ?> 
+<?php echo $this->headTitle() ?> 
+<?php echo $this->dojo()->addStylesheetModule('dijit.themes.claro') ?> 
+<?php echo $this->headLink()->appendStylesheet($this->baseUrl('/css/layout.css')) ?> 
+<?php echo $this->headScript()->appendFile($this->baseUrl('/js/system/system.js')) ?> 
+<!-- Head Close -->
+    </head>
+    <body class="claro">
+        <div id="main">
+            <div id="top"></div>
+            <div id="content">
+<!-- Content Open  -->
+<?php echo $this->layout()->content ?>
+<!-- Content Close -->
+            </div>
+        </div>
+    </body>
+</html>

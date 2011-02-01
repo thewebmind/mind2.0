@@ -1,0 +1,24 @@
+<table>
+    <tr>
+<?php foreach ($this->columns as $column) : ?>
+        <th><a href="[php] echo $this->url(array('order' => '<?php echo $column->name ?>')) [/php]"><?php echo $column->name ?></a></th>
+<?php endforeach ?>
+        <th style="width: 30px">&nbsp;</th>
+        <th style="width: 30px">&nbsp;</th>
+    </tr>
+[php] if (count($this->result) > 0) : [/php]
+[php] foreach ($this->result as $element) : [/php]
+    <tr>
+<?php foreach ($this->columns as $column) : ?>
+        <td>[php] echo $element-><?php echo $column->name ?> [/php]</td>
+<?php endforeach ?>
+        <td><a href="[php] echo $this->url(array('action' => 'update', 'order' => null,<?php foreach ($this->primaries as $primary) : ?> '<?php echo $primary ?>' => $element-><?php echo $primary ?>, <?php endforeach ?>)) [/php]">Editar</a></td>
+        <td><a href="[php] echo $this->url(array('action' => 'delete', 'order' => null,<?php foreach ($this->primaries as $primary) : ?> '<?php echo $primary ?>' => $element-><?php echo $primary ?>, <?php endforeach ?>)) [/php]">Deletar</a></td>
+    </tr>
+[php] endforeach [/php]
+[php] else : [/php]
+    <tr>
+        <td colspan="<?php echo (count($this->columns) + 2) ?>">Lista Vazia</td>
+    </tr>
+[php] endif [/php]
+</table>

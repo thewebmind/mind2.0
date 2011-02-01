@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/343/trunk/restrict/languages
+END
+synonymous.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/335/trunk/restrict/languages/synonymous.xml
+END
+language.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/335/trunk/restrict/languages/language.php
+END
+language_interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/335/trunk/restrict/languages/language_interface.php
+END

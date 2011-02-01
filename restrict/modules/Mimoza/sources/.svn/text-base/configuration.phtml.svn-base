@@ -1,0 +1,28 @@
+[production]
+phpSettings.display_startup_errors = 0
+phpSettings.display_errors = 0
+autoloaderNamespaces[] = "System_"
+includePaths.library = APPLICATION_PATH "/../library"
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+appnamespace = "Application"
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.params.displayExceptions = 0
+resources.db.adapter = "<?php echo $this->adapter ?>"
+resources.db.params.host = "<?php echo $this->production['host'] ?>"
+resources.db.params.username = "<?php echo $this->production['username'] ?>"
+resources.db.params.password = "<?php echo $this->production['password'] ?>"
+resources.db.params.dbname = "<?php echo $this->production['dbname'] ?>"
+resources.db.isDefaultTableAdapter = "true"
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts/"
+resources.locale.default = "pt_BR"
+resources.locale.force = true
+
+[development : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1
+resources.db.params.host = "<?php echo $this->development['host'] ?>"
+resources.db.params.username = "<?php echo $this->development['username'] ?>"
+resources.db.params.password = "<?php echo $this->development['password'] ?>"
+resources.db.params.dbname = "<?php echo $this->development['dbname'] ?>"
